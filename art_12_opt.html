@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color: white;">Davide @ Scalvini</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#four-columns">Articles</a></li>
+        <li><a href="#two-columns">Case Studies</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid --> 
+</nav>
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 id="article-title"><span style="color: #00BE64">Optimization of Power BI Dashboards:</span> A Key Factor for a Data-Driven Culture</h1>
+            <h3>Introduction</h3>
+            <p style="line-height: 1.8;">
+                In recent years, the concept of a "Data-driven culture" has gained prominence, emphasizing the idea that decisions within organizations should be guided by evidence derived from data and its processing. Even the monetary policy statements from the ECB, which "will follow a data-driven approach where decisions are made on a case-by-case basis at each meeting" (2025), confirm that this type of culture has not only been institutionalized but has also entered common vocabulary.
+            </p>
+            <h3>Why Dashboard Optimization Matters</h3>
+            <p style="line-height: 1.8;">
+                Data-driven organizations are those in which managers rely on data to make strategic decisions. According to a study by the McKinsey Global Institute (2018), these companies are more likely to acquire and retain customers, as well as being more profitable (23 times more likely to acquire new customers and 6 times more likely to retain existing ones compared to other companies).
+            </p>
+            <h3>Challenges and Tools</h3>
+            <p style="line-height: 1.8;">
+                The availability of increasingly accessible tools and technologies, both in terms of cost and ease of use, combined with the vast amount of data available, has led to an explosion in the adoption of dashboard creation tools by companies. In particular, Microsoft Power BI has dominated the BI tool market within a few years, thanks to its integration with Microsoft systems and a relatively high ease of use compared to its competitors.
+            </p>
+            <h3>Key Factors in Dashboard Performance</h3>
+            <p style="line-height: 1.8;">
+                Given these premises, the challenges in implementing a dashboard system no longer concern technical difficulties or costs. The main factor hindering many Business Intelligence (BI) projects is dashboard optimization: companies see the volume of available data increasing year by year, making dashboard management more complex in terms of performance.
+            </p>
+            <h3>Best Practices for Power BI Performance</h3>
+            <p style="line-height: 1.8;">
+                Loading performance in Power BI depends on several factors. A crucial aspect is the structure of the data model: a well-designed model with efficient relationships and appropriate data types can significantly improve loading times. The dataset size also plays a role: reducing unnecessary columns, filtering out irrelevant data, and applying compression techniques help optimize performance.
+            </p>
+            <p style="line-height: 1.8;">
+                Data refresh is another key element. It is essential to balance the frequency of updates with their impact on performance by using techniques such as incremental loading and query folding. Network latency can also affect response times: caching strategies and direct connections to data sources (DirectQuery or Live Connection) can improve loading speed.
+            </p>
+            <p style="line-height: 1.8;">
+                Performance can be further optimized by reducing the number of visualizations and complex calculations, leveraging data aggregation, and optimizing DAX queries. Monitoring performance metrics and resolving bottlenecks help maintain high dashboard efficiency.
+            </p>
+            <h3>Conclusion</h3>
+            <p style="line-height: 1.8;">
+                Adopting a data-driven culture and leveraging advanced tools like Power BI represent a strategic opportunity for businesses but require a professional approach and careful assessment of BI projects. Effective dashboard performance management is not just a technical issue but a crucial element in ensuring data usability and usefulness in business decisions.
+            </p>
+            <p style="line-height: 1.8;">
+                Underestimating these aspects can compromise user experience, reducing the effectiveness of Business Intelligence investments. For this reason, it is essential that industry professionals adopt rigorous methodologies and established best practices to design high-performance dashboards, optimize data models, and ensure adequate response times.
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+
+<div class="footer bg-dark text-white py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Data Analyst and Power BI Developer</p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p>Email: davide_scalvini@hotmail.it</p>
+                <p>Phone: +39 123 456 7890</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('body').scrollspy({ target: '#navbar-example' });
+    $(".navbar-collapse ul li a[href^='#']").on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 600);
+    });
+</script>
+</body>
+</html>
